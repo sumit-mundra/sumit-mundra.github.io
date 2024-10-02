@@ -1,7 +1,6 @@
 baseURL = "https://sumit-mundra.github.io"
 languageCode = "en-us"
 theme = "adritian-free-hugo-theme"
-title = 'Sumit Mundra'
 
 # Plugins
 [params.plugins]
