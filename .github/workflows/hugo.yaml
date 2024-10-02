@@ -59,10 +59,16 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: List workspace folder
         run: |
-          ls ${{ github.workspace }}
+          ls -a ${{ github.workspace }}
       - name: List public Folder
         run: |
-          ls ${{ github.workspace }}/public
+          ls -a ${{ github.workspace }}/public
+      - name: List theme Folder
+        run: |
+          ls -a ${{ github.workspace }}/theme
+      - name: List node_modules Folder
+        run: |
+          ls -a ${{ github.workspace }}/node_modules
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
