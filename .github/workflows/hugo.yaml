@@ -56,7 +56,10 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: List Public Folder
+      - name: List workspace folder
+        run: |
+          ls ${{ github.workspace }}
+      - name: List public Folder
         run: |
           ls ${{ github.workspace }}/public
       - name: Upload artifact
