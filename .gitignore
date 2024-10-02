@@ -1,7 +1,5 @@
-_site/
-.sass-cache/
-.jekyll-metadata
-.gitignore
 .idea/
 target/
-
+portfolio/node_modules/
+portfolio/package-lock.json
+portfolio/.hugo_build.lock
