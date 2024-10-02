@@ -82,3 +82,10 @@ theme = "adritian-free-hugo-theme"
   [params.logo]
     text1 = "Sumit"
     text2 = "Mundra"
+
+  [params.footer]
+    copyright = "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+  [params.footer.radity_logo]
+    x = "img/general/design-and-code-radity.png"
+    _2x = "img/general/design-and-code-radity@2x.png"
+    alt = "Design & Code - Radity"
