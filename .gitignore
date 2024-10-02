@@ -1,5 +1,5 @@
 .idea/
 target/
-portfolio/node_modules/
-portfolio/package-lock.json
-portfolio/.hugo_build.lock
+node_modules/
+package-lock.json
+.hugo_build.lock
