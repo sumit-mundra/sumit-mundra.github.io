@@ -1,6 +1,7 @@
 baseURL = "https://sumit-mundra.github.io"
 languageCode = "en-us"
 theme = "adritian-free-hugo-theme"
+title = 'Sumit Mundra'
 
 # Plugins
 [params.plugins]
@@ -30,15 +31,15 @@ theme = "adritian-free-hugo-theme"
   URL = "#about"
   weight = 2
 
-  [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
-  weight = 3
-
 #  [[menu.header]]
-#  name = "Experience"
-#  URL = "#experience"
-#  weight = 4
+#  name = "Portfolio"
+#  URL = "#portfolio"
+#  weight = 3
+
+  [[menu.header]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 4
 
   [[menu.header]]
   name = "Blog"
@@ -56,8 +57,8 @@ theme = "adritian-free-hugo-theme"
   weight = 2
 
   [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Resume"
+  URL = "#experience"
   weight = 3
 
   [[menu.footer]]
@@ -68,7 +69,7 @@ theme = "adritian-free-hugo-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "client-and-work", "contact"]
+  sections = ["showcase", "about", "education", "experience", "contact"]
 
   homepageExperienceCount = 6
 
@@ -82,10 +83,3 @@ theme = "adritian-free-hugo-theme"
   [params.logo]
     text1 = "Sumit"
     text2 = "Mundra"
-
-  [params.footer]
-      copyright = "© Adritian. Free Hugo theme by Adrián Moreno Peña."
-      [params.footer.radity_logo]
-        x = "img/general/design-and-code-radity.png"
-        _2x = "img/general/design-and-code-radity@2x.png"
-        alt = "Design & Code - Radity"
