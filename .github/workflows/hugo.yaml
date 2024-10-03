@@ -57,18 +57,6 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: List workspace folder
-        run: |
-          ls -al ${{ github.workspace }}
-      - name: List public Folder
-        run: |
-          ls -al ${{ github.workspace }}/public
-      - name: List theme Folder
-        run: |
-          ls -al ${{ github.workspace }}/themes
-      - name: List node_modules Folder
-        run: |
-          ls -al ${{ github.workspace }}/node_modules
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
