@@ -143,7 +143,7 @@ contact:
 #    number: "+91 12345 67890"
   email:
     title: "Email"
-    email: '<a href="mailto:sumitmundraiitr@gmail.com">sumitmundra"at"gmail.com</a>'
+    email: '<a href="mailto:sumitmundraiitr@gmail.com">sumitmundraiitr"at"gmail.com</a>'
   button:
     icon: "icon-mail-fill"
     btnText: "Send Message"
