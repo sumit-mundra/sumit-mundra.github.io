@@ -60,8 +60,8 @@ about:
     btnText: "About Me"
     URL: "https://www.linkedin.com/in/sumitmundraiitr/"
   image:
-    x: "images/who-am-i/user-picture.png"
-    _2x: "images/who-am-i/user-picture@2x.png"
+    x: "images/who-am-i/sumit-mundra.jpg"
+    _2x: "images/who-am-i/sumit-mundra@2x.jpg"
 
 # education
 education:
@@ -138,9 +138,9 @@ contact:
     full_name: "Full Name"
     email: "Email Address"
     message: "Type Your Message Here"
-  phone:
-    title: "Phone Number"
-    number: "+91 12345 67890"
+#  phone:
+#    title: "Phone Number"
+#    number: "+91 12345 67890"
   email:
     title: "Email"
     email: '<a href="mailto:sumitmundraiitr@gmail.com">sumitmundra"at"gmail.com</a>'

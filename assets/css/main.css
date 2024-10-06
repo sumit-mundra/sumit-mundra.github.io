@@ -664,24 +664,24 @@ template {
 }
 .h1,
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .h2,
 h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 }
 .h3,
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 .close,
 .h4,
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 .h5,
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 .h6,
 h6 {
@@ -9258,7 +9258,7 @@ h2 {
     margin-bottom: 16px;
 }
 h2 {
-    font-size: 32px;
+    font-size: 24px;
 }
 @media (min-width: 992px) {
     h1 {
@@ -9266,7 +9266,7 @@ h2 {
     }
     h2 {
         margin-bottom: 10px;
-        font-size: 48px;
+        font-size: 24px;
     }
 }
 h3,
@@ -9277,7 +9277,7 @@ h4 {
 @media (min-width: 992px) {
     h3,
     h4 {
-        font-size: 32px;
+        font-size: 24px;
     }
     p {
         line-height: 28px;
@@ -9931,7 +9931,7 @@ textarea:focus {
     transform: translateX(-50%);
 }
 .section .row.row--padded {
-    margin-top: 32px;
+    margin-top: g;
     margin-bottom: 60px;
 }
 @media (min-width: 1200px) {
@@ -10494,7 +10494,7 @@ textarea:focus {
 }
 .rad-showcase .container h1 {
     width: 100%;
-    font-size: 32px;
+    font-size: 24px;
 }
 @media (min-width: 968px) {
     .rad-showcase__bg--mobile {
