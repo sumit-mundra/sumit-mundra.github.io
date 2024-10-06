@@ -1,0 +1,23 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{ partial "head.html" . }} {{ partial "head_custom.html" . }}
+  <script>
+    function printPage() {
+       window.print();
+    }
+  </script>
+</head>
+
+<body>
+  <section id="main">
+    <div style="text-align:center"><button onclick="printPage()">Print</button></div>
+    <div>
+      <article id="content">
+        {{ .Content }}
+      </article>
+    </div>
+  </section>
+</body>
+</html>
