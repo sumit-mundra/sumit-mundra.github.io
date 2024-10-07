@@ -10512,12 +10512,12 @@ textarea:focus {
     width: 100%;
 }
 .rad-showcase .platform-links {
-    margin-top: 40px;
+    margin-top: 15px;
     margin-right: -5px;
 }
 @media (min-width: 992px) {
     .rad-showcase .platform-links {
-        margin-top: 92px;
+    /*    margin-top: 92px; */
         margin-right: -10px;
     }
 }
