@@ -71,12 +71,9 @@ languageCode = "en-us"
 
   homepageExperienceCount = 1
 
-  [params.google_analytics]
-      code = "UA-XXXXX-Y"
-      enabled = false
   [params.google_tag_manager]
-      code = "GTM-XXXXX"
-      enabled = false
+      code = "G-RZBM5YX7LD"
+      enabled = true
   
   [params.logo]
     text1 = "Sumit"
