@@ -71,7 +71,7 @@ languageCode = "en-us"
 
   homepageExperienceCount = 1
 
-  [params.google_tag_manager]
+  [params.analytics.google_tag_manager]
       id = "G-RZBM5YX7LD"
       enabled = true
   
