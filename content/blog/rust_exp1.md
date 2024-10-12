@@ -1,7 +1,7 @@
 +++
 title = 'Fibonacci Race between Rust And JVM Execution'
 date = '2024-10-12T20:18:41+05:30'
-draft = true
+draft = false
 +++
 
 # Fibonacci in Rust and Java
