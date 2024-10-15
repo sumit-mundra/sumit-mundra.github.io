@@ -16,6 +16,11 @@ _A software architect with 10+ years of professional experience developing highl
 ---
 
 # EXPERIENCE
+
+## Freelance Software Developer (JAN 2023 - Current)
+I have consulted for a few small scale fintech projects in family and friends along with upskilling on ML basics and Rust language. I also started [https://github.com/sumit-mundra/cwire-grpc-example](https://github.com/sumit-mundra/cwire-grpc-example) [https://github.com/sumit-mundra/ThermalTrayIcon](https://github.com/sumit-mundra/ThermalTrayIcon) etc.
+
+
 ## OYO, Gurugram — Software Development Engineer III/II (OCT 2019 - JAN  2023)
 OYO is an Indian multinational hospitality chain of leased and franchised hotels, homes and living spaces.
 cf. https://www.oyorooms.com/

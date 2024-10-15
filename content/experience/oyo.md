@@ -5,7 +5,7 @@ draft: false # set to "true" if you want to hide the content
 jobTitle: "Software Development Engineer III" # job description/title. Fill-in
 company: "Oravel Travels Private Limited" # name of the company you worked for. Fill-in
 location: "Gurgaon, India" # place/city/country for the experience. Fill-in.
-duration: "Oct 2019 - Feb 2023" # from-to, for example "2022-2024". Fill-in.
+duration: "Oct 2019 - Jan 2023" # from-to, for example "2022-2024". Fill-in.
 
 ## For the content, you can use a title and a job description.
 ## For example:
