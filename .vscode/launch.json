@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Hugo",
+            "request": "launch",
+            "type": "node-terminal",
+            "command": "hugo server --bind 0.0.0.0 --baseURL http://192.168.29.100:1313/"
+        }
+    ]
+}

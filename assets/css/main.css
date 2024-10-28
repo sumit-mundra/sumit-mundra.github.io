@@ -54,6 +54,8 @@ select {
 pre,
 textarea {
     overflow: auto;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 .badge,
 progress,
@@ -780,6 +782,7 @@ kbd {
 a > code,
 pre code {
     color: inherit;
+    padding: 1rem;
 }
 code {
     color: #e83e8c;
@@ -796,7 +799,7 @@ kbd kbd {
     font-size: 100%;
 }
 pre {
-    display: block;
+    display: flex;
     font-size: 87.5%;
     color: #212529;
 }
@@ -10009,7 +10012,6 @@ textarea:focus {
     box-shadow: 0 42px 34px -16px rgba(0, 0, 0, 0.3);
 }
 .section li {
-    display: block;
     position: relative;
     padding-left: 15px;
     font-size: 16px;
@@ -10019,17 +10021,17 @@ textarea:focus {
     margin-bottom: 12px;
     text-align: left;
 }
-.section li::before {
+/* .section li::before {
     content: "";
-    display: block;
-    position: absolute;
+    position: relative; 
     left: 0;
+    left: 20px;
     top: 10px;
     width: 4px;
     height: 4px;
     border-radius: 2px;
     background-color: #000;
-}
+} */
 .header.collapse.show::before,
 .header.collapsing::before {
     background-color: #fff;
