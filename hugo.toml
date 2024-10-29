@@ -36,18 +36,13 @@ languageCode = "en-us"
 
   [[menu.header]]
   name = "Experience"
-  URL = "#experience"
+  URL = "/experience"
   weight = 3
 
   [[menu.header]]
   name = "Blog"
   URL = "/blog"
   weight = 5
-
-  [[menu.header]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 6
 
   [[menu.footer]]
   name = "About"
@@ -58,11 +53,6 @@ languageCode = "en-us"
   name = "Resume"
   URL = "/resume"
   weight = 3
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "#contact"
-  weight = 4
 
 
 [params]
