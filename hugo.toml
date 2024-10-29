@@ -67,7 +67,7 @@ languageCode = "en-us"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "contact"]
+  sections = ["showcase", "about", "education", "experience"]
 
   homepageExperienceCount = 1
 
