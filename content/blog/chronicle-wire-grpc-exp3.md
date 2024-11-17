@@ -1,13 +1,12 @@
 +++
-title = 'Chronicle Wire with gRPC'
+title = 'Integrating Chronincle Wire with GRPC backend'
 date = '2024-11-17T21:14:08+05:30'
 draft = false
 +++
 
 
-# Integrating Chronincle Wire within GRPC based backend 
+# Intro
 
-## Intro
 Recently, I got introduced to [chronicle wire](http://chronicle.software/chronicle-wire-object-marshalling/0) as a high performance serialization library. While [gRPC](http://grpc.io) based concurrency/latency benefits had always been on top of my mind, I wanted to put theories to test. So, I married the two tasks together. Voila, the ask is to test for a custom grpc backend not utilizing protocol buffers serialization for transport, but chronicle wire.
 
 ## Setup
