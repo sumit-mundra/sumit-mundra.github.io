@@ -5,7 +5,7 @@ draft = false
 +++
 
 # Fibonacci in Rust and Java
-I was curious to compare the runtimes between java and rust. This benchmark exercise was done on my MBP 2015 model with not much care around running programs. Given that the two programs executed back to back, I doubt any OS level resources congestion would have made any difference to the results.
+I was curious to compare the runtimes between java and rust. This benchmark exercise was done on my MBP 2016 model with not much care around running programs. Given that the two programs executed back to back, I doubt any OS level resources congestion would have made any difference to the results.
 
 ## Setup
 For my study purpose, I was trying to write fibonacci series program with rust. So there are two versions to compare fibonacci implementation: 

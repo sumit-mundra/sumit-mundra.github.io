@@ -16,7 +16,14 @@ As always, my old MBP 2016, no external cloud server setup.
 This time, we need a maven project setup to manage dependencies with ease. I fancied myself with slf4j backed with Java Util Logging library, though it is not requirement for the experiment.
 The project is run via an executable uber jar ( maven-shade-plugin at play). 
 
-The source code for this experiment is synced/hosted at [Github](https://github.com/sumit-mundra/cwire-grpc-example). 
+*The source code for this experiment is synced/hosted at [Github](https://github.com/sumit-mundra/cwire-grpc-example).*
+
+To run at your local, clone the repo and cd into the repo directory
+``` sh
+mvn clean package
+java -jar target/cwire-grpc-example-1.0-SNAPSHOT.jar
+```
+
 
 ## Method
 There are several key concerns within this implementation: 
@@ -36,30 +43,31 @@ The data below shows
 - Simulated_delay(us): Server side simulated delay added by thread sleep in each procedure call. (in microseconds)
 - Delta(us): Average delta per call (in microseconds) added because of other code executions like serialization, gc etc. (Sum - (simulated delay * RPCs))/RPCs
 
+In a 10s run, on a 8 cpu threads with under 50% cpu usage, we were able to reach `~600 RPC/s`. Also, the average platform delay hovered around `600-1600 us`. The cpu usage stayed under 25% on my mac for all cases with simulated delay, while in initial no delay, it spiked up to 140% ( base 800%).
 
-```
+``` text
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
 <<omitted>>
 cwire-grpc-example-1.0-SNAPSHOT.jar
-   1,  20388,  2038.80,  9764395.00,   478.93,    0,   478.93
-  10,  42133,  4213.30,  9723696.00,   230.79,    0,   230.79
- 100,  41762,  4176.20,  9758782.00,   233.68,    0,   233.68
-   1,   5271,   527.10,  9936468.00,  1885.12,    1,  1884.12
-  10,   5433,   543.30,  9934307.00,  1828.51,    1,  1827.51
- 100,   5369,   536.90,  9944015.00,  1852.12,    1,  1851.12
-   1,   5613,   561.30,  9941261.00,  1771.11,   10,  1761.11
-  10,   5475,   547.50,  9941111.00,  1815.73,   10,  1805.73
- 100,   5554,   555.40,  9936992.00,  1789.16,   10,  1779.16
-   1,   5564,   556.40,  9939306.00,  1786.36,  100,  1686.36
-  10,   5582,   558.20,  9939556.00,  1780.64,  100,  1680.64
- 100,   5462,   546.20,  9937968.00,  1819.47,  100,  1719.47
-   1,   5432,   543.20,  9940905.00,  1830.06, 1000,   830.06
-  10,   5428,   542.80,  9940311.00,  1831.30, 1000,   831.30
- 100,   5438,   543.80,  9938362.00,  1827.58, 1000,   827.58
+   1,  27627,  2762.70,  9766997.00,   353.53,    0,   353.53
+  10,  60806,  6080.60,  9728751.00,   160.00,    0,   160.00
+ 100,  61799,  6179.90,  9762235.00,   157.97,    0,   157.97
+   1,   6066,   606.60,  9954892.00,  1641.10,    1,  1640.10
+  10,   6150,   615.00,  9954252.00,  1618.58,    1,  1617.58
+ 100,   6164,   616.40,  9951140.00,  1614.40,    1,  1613.40
+   1,   6138,   613.80,  9954634.00,  1621.80,   10,  1611.80
+  10,   6044,   604.40,  9949912.00,  1646.25,   10,  1636.25
+ 100,   5943,   594.30,  9945836.00,  1673.54,   10,  1663.54
+   1,   6090,   609.00,  9948296.00,  1633.55,  100,  1533.55
+  10,   6116,   611.60,  9947999.00,  1626.55,  100,  1526.55
+ 100,   6083,   608.30,  9928227.00,  1632.13,  100,  1532.13
+   1,   6013,   601.30,  9954174.00,  1655.44, 1000,   655.44
+  10,   6015,   601.50,  9960095.00,  1655.88, 1000,   655.88
+ 100,   6105,   610.50,  9950295.00,  1629.86, 1000,   629.86
  ```
 
-The output text omits output line about chronicle wire library version )
-`Chronicle core loaded from file: ... cwire-grpc-example-1.0-SNAPSHOT.jar`
+The output text omits output line about chronicle wire inclusion path
+`Chronicle core loaded from file: .../cwire-grpc-example-1.0-SNAPSHOT.jar`
 
 We could observe that we are reaping dual benefits of gRPC parallel execution over netty. I am not sure about the serialization benefits at this scale here though and would need another experiment with gson as serialization for a comparison. Please wait till the next post comes out ...
