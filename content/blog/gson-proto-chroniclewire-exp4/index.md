@@ -42,9 +42,9 @@ There are smaller key nuances from earlier setup.
 
 ## 256MB heap space
 
-**Gson**
+### Gson
 
-```
+``` text
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
    1,  42260,  4226.00,  9736536.00,   230.40,    0,   230.40
@@ -64,9 +64,9 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
  100,   5525,   552.50,  9944750.00,  1799.95, 1000,   799.95
 ```
 
-**Protocol Buffer**
+### Protocol Buffer
 
-```
+``` text
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
    1,  44625,  4462.50,  9761497.00,   218.75,    0,   218.75
@@ -86,9 +86,9 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
  100,   5595,   559.50,  9944045.00,  1777.31, 1000,   777.31
 ```
 
-**Chronicle Wire**
+### Chronicle Wire
 
-```
+``` text
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
 Chronicle core loaded from file:/Users/sumitmundra/cwire.jar
@@ -111,8 +111,8 @@ Chronicle core loaded from file:/Users/sumitmundra/cwire.jar
 
 ## 20MB heap space
 
-**Gson:**
-```
+### Gson
+``` text
 cwire-grpc-example git:(gson) ✗ java -jar -Xmx20m target/gson-grpc-example-1.0-SNAPSHOT.jar 
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
@@ -133,8 +133,9 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
 ```
 ![Gson Visual VM Snapshot](gson-visualvm.png "Gson Visual VM Snapshot")
 
-**Protocol Buffer**
-```
+### Protocol Buffer
+
+``` text
 ➜  cwire-grpc-example git:(proto-setup) ✗ java -jar -Xmx20m target/proto-grpc-example-1.0-SNAPSHOT.jar
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
@@ -155,9 +156,9 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
 ```
 ![Protocol Buffer Visual VM Snapshot](proto-visualvm.png "Protocol Buffer Visual VM Snapshot")
 
-**Chronicle Wire**
+### Chronicle Wire
 
-```
+``` text
 ➜  cwire-grpc-example git:(main) ✗ java -jar -Xmx20m target/cwire-grpc-example-1.0-SNAPSHOT.jar 
 Started
 Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
@@ -179,7 +180,7 @@ Chronicle core loaded from file:/Users/sumitmundra/poc_projects/cwire-grpc-examp
 ```
 ![Chronicle Wire VisualVM Snapshot](cwire-visualvm.png "Chronicle Wire VisualVM Snapshot")
 
-To understand more on columns details, please recap with previous blog.
+To understand more on columns details, please refer [previous](../chronicle-wire-grpc-exp3/) blog.
 
 - Two columns are of particular interest in tabular data:
 	- The third column provides **average RPC/s** achieved in the iteration.
