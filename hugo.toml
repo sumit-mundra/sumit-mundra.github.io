@@ -1,5 +1,6 @@
 baseURL = "https://sumit-mundra.github.io"
 languageCode = "en-us"
+enableRobotsTXT = true
 
 # Plugins
 [params.plugins]
