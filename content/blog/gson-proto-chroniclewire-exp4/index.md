@@ -131,7 +131,7 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
  500,   3134,   313.40,  9779656.00,  3120.50, 1000,  2120.50
 1000,   3089,   308.90,  9794796.00,  3170.86, 1000,  2170.86
 ```
-![Gson Visual VM Snapshot](gson-visualvm.png "Gson Visual VM Snapshot")
+[![Gson Visual VM Snapshot](gson-visualvm.png "Gson Visual VM Snapshot")](./gson-visualvm.png)
 
 ### Protocol Buffer
 
@@ -154,7 +154,7 @@ Clients, RPCs, RPCs/s, sum(us), avg(us), simulated_delay(us), delta(us)
  500,   5334,   533.40,  9949009.00,  1865.21, 1000,   865.21
 1000,   5334,   533.40,  9948533.00,  1865.12, 1000,   865.12
 ```
-![Protocol Buffer Visual VM Snapshot](proto-visualvm.png "Protocol Buffer Visual VM Snapshot")
+[![Protocol Buffer Visual VM Snapshot](proto-visualvm.png "Protocol Buffer Visual VM Snapshot")](./proto-visualvm.png)
 
 ### Chronicle Wire
 
@@ -178,7 +178,7 @@ Chronicle core loaded from file:/Users/sumitmundra/poc_projects/cwire-grpc-examp
  500,   4102,   410.20,  9707126.00,  2366.44, 1000,  1366.44
 1000,   4174,   417.40,  9730980.00,  2331.33, 1000,  1331.33
 ```
-![Chronicle Wire VisualVM Snapshot](cwire-visualvm.png "Chronicle Wire VisualVM Snapshot")
+[![Chronicle Wire VisualVM Snapshot](cwire-visualvm.png "Chronicle Wire VisualVM Snapshot")](./cwire-visualvm.png)
 
 To understand more on columns details, please refer [previous](../chronicle-wire-grpc-exp3/) blog.
 
