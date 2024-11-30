@@ -1,6 +1,7 @@
 baseURL = "https://sumit-mundra.github.io"
 languageCode = "en-us"
 enableRobotsTXT = true
+enableGitInfo = true
 
 # Plugins
 [params.plugins]
@@ -58,9 +59,10 @@ enableRobotsTXT = true
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience"]
+  sections = ["showcase", "about", "blog", "experience", "education"]
 
-  homepageExperienceCount = 1
+  homepageExperienceCount = 2
+  homePageBlogCount = 4
 
   [params.analytics.google_tag_manager]
       id = "G-RZBM5YX7LD"
@@ -76,3 +78,6 @@ enableRobotsTXT = true
     x = "img/general/design-and-code-radity.png"
     _2x = "img/general/design-and-code-radity@2x.png"
     alt = "Design & Code - Radity"
+
+[frontmatter]
+  lastmod = ['lastmod', ':fileModTime', ':default']

@@ -9620,6 +9620,9 @@ textarea:focus, textarea:active {
 .experience__date {
     line-height: 1.57;
 }
+.blog__published_date {
+    line-height: 1.57;
+}
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder {
     color: #333;
@@ -9752,6 +9755,13 @@ input[type="email"]::placeholder {
     z-index: 2;
     position: relative;
 }
+.blog__published_date {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    z-index: 2;
+    position: relative;
+}
 .about__profile-picture {
     -webkit-box-flex: 0;
     flex: 0 0 calc(100% + 80px);
@@ -9786,6 +9796,19 @@ html body {
     font-weight: 600;
     z-index: 2;
 }
+
+.blog__title {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 2;
+}
+@media (min-width: 992px) {
+    .blog__title {
+        font-size: 24px;
+    }
+}
+
 @media (min-width: 992px) {
     .experience__title {
         font-size: 24px;

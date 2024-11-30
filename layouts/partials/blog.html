@@ -1,0 +1,29 @@
+{{ if .Site.Data.homepage.blog.enable }}
+<section class="section section--border-bottom rad-animation-group">
+    <div class="container">
+        <div class="row rad-fade-down">
+            <div class="col-12">
+                <h2>{{ .Site.Data.homepage.blog.title }}</h2>
+                <div class="row pt-2 pt-md-4">
+                    {{ $xp := where .Site.RegularPages.ByDate.Reverse "Type" "blog"}}
+                    {{ $xp := $xp | intersect (where .Site.Pages ".Params.draft" false) }}
+                    {{ $xpCount := len $xp }}
+                    {{ $totalCount := .Site.Params.homePageBlogCount }}
+                    {{ range first $totalCount $xp }}
+                        <div class="col-12 col-sm-6 mb-4 mb-sm-0">
+                            <a href="{{.Permalink}}">
+                                <div class="blog__title">
+                                    {{ .Params.title }}
+                                </div>
+                                <div class="blog__published_date">
+                                   {{ .Params.Date.Format "Mon, 02 Jan 2006" }}
+                                </div>
+                            </a>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

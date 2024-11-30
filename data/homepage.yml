@@ -81,10 +81,10 @@ experience:
   enable: true
   title: "Experience"
   description: >
-    I have 12+ years of experience in developing backend web-services. I provide end-to-end solutions from 
-    design to development to deployment. I specialize in making design 
-    choices which are frugal yet scalable. I have conducted 100+ technical interviews and guided more than a dozen 
-    folks to their upward career roles.
+    I have 12+ years of experience in developing backend web-services.
+    I provide end-to-end solutions from design to development to deployment.
+    I specialize in making design choices which are frugal yet scalable.
+    I have conducted 100+ technical interviews and guided more than a dozen folks to their upward career roles.
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -155,3 +155,7 @@ newsletter:
   success_message: "Successfully subscribed"
   error_message: "Error while subscribing."
   note: "We'll never share your email with anyone else."
+
+blog:
+  enable: true
+  title: "Recent Blogs"
