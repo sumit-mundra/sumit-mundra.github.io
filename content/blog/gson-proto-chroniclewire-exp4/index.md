@@ -1,5 +1,5 @@
 +++
-title = 'Gson vs Protoc vs Chronicle Wire Race over 20MB Heap'
+title = 'Gson vs Proto vs Chronicle Wire Race over 20MB Heap'
 date = '2024-11-21T15:10:54+05:30'
 draft = false
 +++
