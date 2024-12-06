@@ -4,3 +4,4 @@ node_modules/
 .hugo_build.lock
 resources/
 public/
+content/blog/.DS_Store
